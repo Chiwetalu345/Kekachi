@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;600&family=Poppins:wght@500;700;900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+  --green:rgba(0, 186, 163, 1);
+}
 body {
   font-family:'Montserrat', sans-serif;
   padding: 20px;
@@ -35,6 +38,9 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+li a:hover{
+  color: var(--green);
 }
 .main-section{
   display: flex; 
