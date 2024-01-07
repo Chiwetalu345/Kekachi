@@ -21,6 +21,9 @@ ul {
   padding: 0;
   display:flex;
 }
+h1{
+  font-size: 40px;
+}
 li{
     display: inline;
 }
@@ -33,7 +36,20 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+.main-section{
+  display: flex; 
+  padding: 80px 50px; 
+  justify-content: space-around;
+}
 
+.main-text{
+  width:40%; 
+  padding-top: 30px;
+}
+
+.image{
+  width:50%;
+}
 .primary-btn{
   color: white;
   background-color: rgba(0, 186, 163, 1);
@@ -48,4 +64,25 @@ button{
   border-radius: 37px;
   border: none;
   font-size: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .menu{
+    flex-direction: column;
+  }
+  .main-section{
+    flex-direction: column;
+    padding: 10px 40px;
+  }
+  .main-text{
+    width: 100%;
+  }
+  .image{
+    width: 100%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .primary-btn{
+    display: none;
+  }
 }
